@@ -19,7 +19,7 @@ class _RequestListScreenState extends BaseRouteState {
   Widget build(BuildContext context) {
     List<String> username = ['Jenil', 'Denil', 'Ravi'];
 
-    List<String> servicename = ['Pension pour animaux', "Promenade d'animaux", 'Vétérinaire'];
+    List<String> servicename = ['Hébergement des animaux', "Promenade d'animaux", 'Vétérinaire'];
     List<String> time = ['Il y a 2 heures', 'Il y a 52 heures', 'Il y a 8 heures'];
     return Scaffold(
       drawer: DrawerWidget(),
