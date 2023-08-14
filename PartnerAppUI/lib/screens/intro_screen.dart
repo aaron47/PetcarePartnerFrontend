@@ -30,7 +30,7 @@ class _IntroScreenState extends BaseRouteState {
       next: const Text(
         "Next",
       ),
-      done: const Text("Done",
+      done: const Text("Fait",
           style: TextStyle(
             fontWeight: FontWeight.w600,
           )),
@@ -50,14 +50,14 @@ class _IntroScreenState extends BaseRouteState {
   List<PageViewModel> listPagesViewModel() {
     return [
       PageViewModel(
-        title: "Health and Happy Pets ",
+        title: "Animaux en bonne santé et heureux",
         bodyWidget: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
                 child: Center(
               child: Text(
-                "The best solution for your pet's need a mental and physical health",
+                "La meilleure solution pour les besoins de votre animal, tant pour sa santé mentale que physique.",
                 style: Theme.of(context).primaryTextTheme.bodyText2,
                 textAlign: TextAlign.center,
               ),
@@ -67,14 +67,14 @@ class _IntroScreenState extends BaseRouteState {
         image: Center(child: Image.asset('assets/images/petss.jpg')),
       ),
       PageViewModel(
-        title: "Store",
+        title: "Magasin",
         bodyWidget: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
               child: Center(
                 child: Text(
-                  "Spoil your pet with treats and accessories from our online store",
+                  "Chouchoutez votre animal avec des friandises et des accessoires de notre boutique en ligne.",
                   style: Theme.of(context).primaryTextTheme.bodyText2,
                   textAlign: TextAlign.center,
                 ),
@@ -85,14 +85,14 @@ class _IntroScreenState extends BaseRouteState {
         image: Center(child: Image.asset('assets/images/pets1.jpg')),
       ),
       PageViewModel(
-        title: "Veterinary",
+        title: "Vétérinaire",
         bodyWidget: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
               child: Center(
                 child: Text(
-                  "Find reliable veterinary doctor that your  pet will love",
+                  "Trouvez un vétérinaire fiable que votre animal adorera.",
                   style: Theme.of(context).primaryTextTheme.bodyText2,
                   textAlign: TextAlign.center,
                 ),
@@ -103,14 +103,14 @@ class _IntroScreenState extends BaseRouteState {
         image: Center(child: Image.asset('assets/images/pets2.jpg')),
       ),
       PageViewModel(
-        title: "My Pets",
+        title: "Mes Animaux",
         bodyWidget: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(
               child: Center(
                 child: Text(
-                  "Taking care of pets is my favourite.it helps me to gaimr stress and fatigue",
+                  "Prendre soin des animaux est ma préférence. Cela m'aide à réduire le stress et la fatigue.",
                   style: Theme.of(context).primaryTextTheme.bodyText2,
                   textAlign: TextAlign.center,
                 ),
@@ -131,7 +131,7 @@ class _IntroScreenState extends BaseRouteState {
                   );
                 },
                 child: const Text(
-                  "Let's Go",
+                  "Allons-y",
                 ))),
         image: Center(child: Image.asset('assets/images/pets1.jpg')),
       ),

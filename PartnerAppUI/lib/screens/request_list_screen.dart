@@ -19,8 +19,8 @@ class _RequestListScreenState extends BaseRouteState {
   Widget build(BuildContext context) {
     List<String> username = ['Jenil', 'Denil', 'Ravi'];
 
-    List<String> servicename = ['Pet Boaring', 'Pet Walking', 'Veterinarian'];
-    List<String> time = ['2 hours ago', '52 hours ago', '8 hours ago'];
+    List<String> servicename = ['Pension pour animaux', "Promenade d'animaux", 'Vétérinaire'];
+    List<String> time = ['Il y a 2 heures', 'Il y a 52 heures', 'Il y a 8 heures'];
     return Scaffold(
       drawer: DrawerWidget(),
       appBar: AppBar(
@@ -142,7 +142,7 @@ class _RequestListScreenState extends BaseRouteState {
                                         SizedBox(
                                           width: 10,
                                         ),
-                                        Text('Past 8 hours ago')
+                                        Text('Il y a 8 heures passées')
                                       ],
                                     ),
                                   ),
