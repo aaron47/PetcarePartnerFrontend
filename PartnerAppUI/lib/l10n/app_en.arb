@@ -7,9 +7,9 @@
   "@lbl_login": {
     "description": "Connexion"
   },
-  "lbl_loading": "Loading...",
+  "lbl_loading": "Chargement...",
   "@lbl_loading": {
-    "description": "Loading..."
+    "description": "Chargement..."
   },
   "lbl_email_or_mobile_no": "Mobile no",
   "@lbl_email_or_mobile_no": {
@@ -107,21 +107,21 @@
   "@lbl_weekly_earn":{
     "description":"Gains hebdomadaires"
   },
-  "lbl_todays_earning":"Gains d'aujourd'hui",
+  "lbl_todays_earning":"Gains",
   "@lbl_todays_earning":{
-    "description":"Gains d'aujourd'hui"
+    "description":"Gains "
   },
-  "lbl_todays_orders": "Commandes d'aujourd'hui",
+  "lbl_todays_orders": "Reservations",
   "@lbl_todays_orders":{
-    "description":"Commandes d'aujourd'hui"
+    "description":"Reservations "
   },
-  "lbl_todays_service":"Services d'aujourd'hui",
+  "lbl_todays_service":"Services ",
   "@lbl_todays_service":{
-    "description":"Commandes d'aujourd'hui"
+    "description":"Reservation"
   },
-  "lbl_todays_requests":"Demandes d'aujourd'hui",
+  "lbl_todays_requests":"Demandes",
   "@lbl_todays_requests":{
-    "description":"Demandes d'aujourd'hui"
+    "description":"Demandes"
   },
   "lbl_completed_goals":"Objectifs atteints",
   "@lbl_completed_goals":{
@@ -131,9 +131,9 @@
   "@lbl_home":{
     "description":"Acceuil"
   },
-  "lbl_blogs":"Blogs",
+  "lbl_blogs":"Articles",
   "@lbl_blogs":{
-    "description":"Blogs"
+    "description":"Articles"
   },
   "lbl_request":"Demande",
   "@lbl_request":{
@@ -219,41 +219,41 @@
   "@lbl_blog_details":{
     "description":"Blogs Detail"
   },
-  "lbl_add_new_blog":"Add New Blog",
+  "lbl_add_new_blog":"Ajouter un article",
   "@lbl_add_new_blog":{
-    "description":"Add New Blog"
+    "description":"Ajouter un article"
   },
-  "lbl_title":"Title",
+  "lbl_title":"Titre",
   "@lbl_title":{
-    "description":"Title"
+    "description":"Titre"
   },
-  "hnt_enter_title":"Enter title",
+  "hnt_enter_title":"Enterer titre",
   "@hnt_enter_title":{
-    "description":"Enter title"
+    "description":"Entrer titre"
   },
-  "lbl_details":"Details",
+  "lbl_details":"Détails",
   "@lbl_details":{
-    "description":"Details"
+    "description":"Détails"
   },
   "lbl_blog_details_description":"Enter details description",
   "@lbl_blog_details_description":{
     "description":"Enter details description"
   },
-  "lbl_blog_date":"Date Time",
+  "lbl_blog_date":"Date ",
   "@lbl_date":{
-    "description":"Date Time"
+    "description":"Date"
   },
-  "btn_verify_blogs":"Verify Blogs",
+  "btn_verify_blogs":"Verifier Article",
   "@btn_verify_blogs":{
-    "description":"Verify Blogs"
+    "description":"Verifier Article"
   },
   "lbl_documents_verification":"Documents Verification",
   "@lbl_documents_verification":{
     "description":"Documents Verification"
   },
-  "lbl_tap_to_add_image":"Tap to add image",
+  "lbl_tap_to_add_image":"Taper pour ajouter un image",
   "@lbl_tap_to_add_image":{
-    "description":"Tap to add image"
+    "description":"Taper pour ajouter un image"
   },
   "btn_apply_for_verification":"Apply for Verification",
   "@btn_apply_for_verification":{
@@ -271,21 +271,21 @@
   "@lbl_tap_here_to_edit":{
     "description":"Tap here to edit"
   },
-  "lbl_balance":"Balance",
+  "lbl_balance":"Solde",
   "@lbl_balance":{
-    "description":"Balance"
+    "description":"Solde"
   },
-  "lbl_creadits":"Creadits",
+  "lbl_creadits":"Crédits",
   "@lbl_creadits":{
-    "description":"Creadits"
+    "description":"Crédits"
   },
-  "lbl_review":"Reviews",
+  "lbl_review":"Avis",
   "@lbl_review":{
-    "description":"Reviews"
+    "description":"Avis"
   },
-  "lbl_about":"About",
+  "lbl_about":"À propos",
   "@lbl_about":{
-    "description":"About"
+    "description":"À propos"
   },
   "btn_edit":"Editer",
   "@btn_edit":{
@@ -359,9 +359,9 @@
   "@btn_cancel":{
     "description":"Cancel"
   },
-  "btn_logout":"Logout",
+  "btn_logout":"Déconnexion",
   "@btn_logout":{
-    "description":"Logout"
+    "description":"Déconnexion"
   },
   "txt_total_earning":"Totla Earning",
   "@txt_total_earning":{
@@ -507,9 +507,9 @@
   "@lbl_products":{
     "description":"Products"
   },
-  "lbl_account":"Account",
+  "lbl_account":"Compte",
   "@lbl_account":{
-    "description":"Account"
+    "description":"Compte"
   },
   "lbl_language_selection":"Language Selection",
   "@lbl_language_selection":{
@@ -531,9 +531,9 @@
   "@lbl_rate_us":{
     "description":"Rate Us"
   },
-  "lbl_logout":"Logout",
+  "lbl_logout":"Déconnexion",
   "@lbl_logout":{
-    "description":"Logout"
+    "description":"Déconnexion"
   },
   "lbl_update_profile":"Update Profile",
   "@lbl_update_profile":{

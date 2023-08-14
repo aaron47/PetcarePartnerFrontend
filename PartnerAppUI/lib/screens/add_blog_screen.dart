@@ -66,7 +66,7 @@ class _AddBlogScreenState extends BaseRouteState {
                                 ))
                             .toList(),
                         hint: Text(
-                          'Category',
+                          'Catégorie',
                           style:
                               Theme.of(context).inputDecorationTheme.labelStyle,
                         ),

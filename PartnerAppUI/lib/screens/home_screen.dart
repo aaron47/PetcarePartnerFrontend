@@ -110,7 +110,7 @@ class _HomeScreenState extends BaseRouteState {
                                           MainAxisAlignment.center,
                                       children: [
                                         const FaIcon(
-                                          FontAwesomeIcons.rupeeSign,
+                                          FontAwesomeIcons.moneyBill,
                                           color: Colors.black,
                                           size: 15,
                                         ),
@@ -195,7 +195,7 @@ class _HomeScreenState extends BaseRouteState {
                                           MainAxisAlignment.center,
                                       children: [
                                         const FaIcon(
-                                          FontAwesomeIcons.rupeeSign,
+                                          FontAwesomeIcons.moneyBill,
                                           color: Colors.black,
                                           size: 15,
                                         ),
@@ -249,40 +249,6 @@ class _HomeScreenState extends BaseRouteState {
                       ],
                     ),
                   ),
-                  Container(
-                    margin: const EdgeInsets.only(bottom: 15, top: 5),
-                    height: MediaQuery.of(context).size.height * 0.27,
-                    width: MediaQuery.of(context).size.width - 25,
-                    padding: const EdgeInsets.only(),
-                    child: Card(
-                      elevation: 2,
-                      child: SingleChildScrollView(
-                        child: Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.only(top: 25),
-                              child: Text(
-                                AppLocalizations.of(context)
-                                    .lbl_completed_goals,
-                                style: Theme.of(context)
-                                    .primaryTextTheme
-                                    .headline6,
-                              ),
-                            ),
-                            Padding(
-                                padding: const EdgeInsets.only(top: 20),
-                                child: CircularPercentIndicator(
-                                  radius: 85.0,
-                                  lineWidth: 12.0,
-                                  percent: 0.6,
-                                  center: const Text("1.5"),
-                                  progressColor: Theme.of(context).primaryColor,
-                                ))
-                          ],
-                        ),
-                      ),
-                    ),
-                  )
                 ],
               ),
             ),

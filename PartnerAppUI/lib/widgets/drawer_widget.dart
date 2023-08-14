@@ -39,7 +39,7 @@ class _DrawerWidgetState extends BaseRouteState {
                           ),
                         )),
                     title: Text(
-                      'Jenil Patel',
+                      'Mohammed Patel',
                       style: Theme.of(context).textTheme.headline5,
                     ),
                     subtitle: Text(
@@ -47,105 +47,105 @@ class _DrawerWidgetState extends BaseRouteState {
                       style: Theme.of(context).textTheme.headline6,
                     )),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 40),
-                child: ListTile(
-                  leading: const Icon(
-                    FontAwesomeIcons.wallet,
-                    color: Colors.white,
-                    size: 22,
-                  ),
-                  title: Text(
-                    AppLocalizations.of(context).lbl_my_wallet,
-                    style: Theme.of(context).textTheme.headline6,
-                  ),
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(builder: (context) => MyWalletScreen()),
-                    );
-                  },
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 0),
-                child: ListTile(
-                  leading: const Icon(
-                    FontAwesomeIcons.tag,
-                    color: Colors.white,
-                    size: 22,
-                  ),
-                  title: Text(
-                    AppLocalizations.of(context).lbl_coupons,
-                    style: Theme.of(context).textTheme.headline6,
-                  ),
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                          builder: (context) => CouponListScreen()),
-                    );
-                  },
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 0),
-                child: ListTile(
-                  leading: const Icon(
-                    Icons.image_sharp,
-                    color: Colors.white,
-                    size: 22,
-                  ),
-                  title: Text(
-                    AppLocalizations.of(context).lbl_gallery,
-                    style: Theme.of(context).textTheme.headline6,
-                  ),
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                          builder: (context) => GalleryListScreen()),
-                    );
-                  },
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 0),
-                child: ListTile(
-                  leading: const Icon(
-                    Icons.card_giftcard,
-                    color: Colors.white,
-                    size: 22,
-                  ),
-                  title: Text(
-                    AppLocalizations.of(context).lbl_add_products,
-                    style: Theme.of(context).textTheme.headline6,
-                  ),
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                          builder: (context) => ProductListScreen()),
-                    );
-                  },
-                ),
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 0),
-                child: ListTile(
-                  leading: const Icon(
-                    Icons.shopping_bag,
-                    color: Colors.white,
-                    size: 22,
-                  ),
-                  title: Text(
-                    AppLocalizations.of(context).lbl_orders,
-                    style: Theme.of(context).textTheme.headline6,
-                  ),
-                  onTap: () {
-                    Navigator.of(context).push(
-                      MaterialPageRoute(
-                          builder: (context) => OrderListScreen()),
-                    );
-                  },
-                ),
-              ),
+              // Padding(
+              //   padding: const EdgeInsets.only(top: 40),
+              //   child: ListTile(
+              //     leading: const Icon(
+              //       FontAwesomeIcons.wallet,
+              //       color: Colors.white,
+              //       size: 22,
+              //     ),
+              //     title: Text(
+              //       AppLocalizations.of(context).lbl_my_wallet,
+              //       style: Theme.of(context).textTheme.headline6,
+              //     ),
+              //     onTap: () {
+              //       Navigator.of(context).push(
+              //         MaterialPageRoute(builder: (context) => MyWalletScreen()),
+              //       );
+              //     },
+              //   ),
+              // ),
+              // Padding(
+              //   padding: const EdgeInsets.only(top: 0),
+              //   child: ListTile(
+              //     leading: const Icon(
+              //       FontAwesomeIcons.tag,
+              //       color: Colors.white,
+              //       size: 22,
+              //     ),
+              //     title: Text(
+              //       AppLocalizations.of(context).lbl_coupons,
+              //       style: Theme.of(context).textTheme.headline6,
+              //     ),
+              //     onTap: () {
+              //       Navigator.of(context).push(
+              //         MaterialPageRoute(
+              //             builder: (context) => CouponListScreen()),
+              //       );
+              //     },
+              //   ),
+              // ),
+              // Padding(
+              //   padding: const EdgeInsets.only(top: 0),
+              //   child: ListTile(
+              //     leading: const Icon(
+              //       Icons.image_sharp,
+              //       color: Colors.white,
+              //       size: 22,
+              //     ),
+              //     title: Text(
+              //       AppLocalizations.of(context).lbl_gallery,
+              //       style: Theme.of(context).textTheme.headline6,
+              //     ),
+              //     onTap: () {
+              //       Navigator.of(context).push(
+              //         MaterialPageRoute(
+              //             builder: (context) => GalleryListScreen()),
+              //       );
+              //     },
+              //   ),
+              // ),
+              // Padding(
+              //   padding: const EdgeInsets.only(top: 0),
+              //   child: ListTile(
+              //     leading: const Icon(
+              //       Icons.card_giftcard,
+              //       color: Colors.white,
+              //       size: 22,
+              //     ),
+              //     title: Text(
+              //       AppLocalizations.of(context).lbl_add_products,
+              //       style: Theme.of(context).textTheme.headline6,
+              //     ),
+              //     onTap: () {
+              //       Navigator.of(context).push(
+              //         MaterialPageRoute(
+              //             builder: (context) => ProductListScreen()),
+              //       );
+              //     },
+              //   ),
+              // ),
+              // Padding(
+              //   padding: const EdgeInsets.only(top: 0),
+              //   child: ListTile(
+              //     leading: const Icon(
+              //       Icons.shopping_bag,
+              //       color: Colors.white,
+              //       size: 22,
+              //     ),
+              //     title: Text(
+              //       AppLocalizations.of(context).lbl_orders,
+              //       style: Theme.of(context).textTheme.headline6,
+              //     ),
+              //     onTap: () {
+              //       Navigator.of(context).push(
+              //         MaterialPageRoute(
+              //             builder: (context) => OrderListScreen()),
+              //       );
+              //     },
+              //   ),
+              // ),
               Padding(
                 padding: const EdgeInsets.only(top: 0),
                 child: ListTile(

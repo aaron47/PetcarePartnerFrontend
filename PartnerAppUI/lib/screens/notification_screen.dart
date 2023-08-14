@@ -37,7 +37,7 @@ class _NotificationScreenState extends BaseRouteState {
                           ),
                         )),
                         title: Text(
-                          'Jenil Patel',
+                          'Mohamed Patel',
                           style: Theme.of(context).textTheme.bodyText1,
                         ),
                         subtitle: Text(

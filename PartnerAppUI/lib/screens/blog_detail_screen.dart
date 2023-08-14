@@ -63,7 +63,7 @@ class _BlogDetailScreenState extends BaseRouteState {
                           Container(
                             margin: const EdgeInsets.only(left: 15),
                             child: Text(
-                              'Jenil Patel',
+                              "Karim",
                               style: Theme.of(context).textTheme.headline5,
                             ),
                           )

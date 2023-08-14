@@ -63,7 +63,7 @@ class _ServiceDetailViewScreenState extends BaseRouteState {
                           Container(
                             margin: const EdgeInsets.only(left: 15),
                             child: Text(
-                              'Jenil Patel',
+                              'Adel',
                               style: Theme.of(context).textTheme.headline5,
                             ),
                           )

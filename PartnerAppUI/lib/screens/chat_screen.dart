@@ -23,7 +23,7 @@ class _ChatScreenState extends BaseRouteState {
         child: Scaffold(
           appBar: AppBar(
             title: Text(
-              'Jenil',
+              'Hamza',
             ),
             elevation: 0,
           ),

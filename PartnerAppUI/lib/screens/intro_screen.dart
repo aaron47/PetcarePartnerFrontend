@@ -25,10 +25,10 @@ class _IntroScreenState extends BaseRouteState {
       },
       showSkipButton: true,
       skip: const Text(
-        "Skip",
+        "Passer",
       ),
       next: const Text(
-        "Next",
+        "Suivant",
       ),
       done: const Text("Fait",
           style: TextStyle(

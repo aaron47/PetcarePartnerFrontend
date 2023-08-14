@@ -271,29 +271,29 @@
   "@lbl_tap_here_to_edit":{
     "description":"Tap here to edit"
   },
-  "lbl_balance":"Balance",
+  "lbl_balance":"Solde",
   "@lbl_balance":{
-    "description":"Balance"
+    "description":"Solde"
   },
-  "lbl_creadits":"Creadits",
+  "lbl_creadits":"Crédits",
   "@lbl_creadits":{
-    "description":"Creadits"
+    "description":"Crédits"
   },
   "lbl_review":"Reviews",
   "@lbl_review":{
     "description":"Reviews"
   },
-  "lbl_about":"About",
+  "lbl_about":"Avis",
   "@lbl_about":{
-    "description":"About"
+    "description":"Avis"
   },
-  "btn_edit":"Edit",
+  "btn_edit":"Editer",
   "@btn_edit":{
-    "description":"Edit"
+    "description":"Editer"
   },
-  "btn_view":"View",
+  "btn_view":"Voir",
   "@btn_view":{
-    "description":"View"
+    "description":"Voir"
   },
   "lbl_service_detail":"Service Detail",
   "@lbl_service_detail":{
@@ -359,9 +359,9 @@
   "@btn_cancel":{
     "description":"Cancel"
   },
-  "btn_logout":"Logout",
+  "btn_logout":"Déconnexion",
   "@btn_logout":{
-    "description":"Logout"
+    "description":"Déconnexion"
   },
   "txt_total_earning":"Totla Earning",
   "@txt_total_earning":{
@@ -507,9 +507,9 @@
   "@lbl_products":{
     "description":"Products"
   },
-  "lbl_account":"Account",
+  "lbl_account":"Compte",
   "@lbl_account":{
-    "description":"Account"
+    "description":"Compte"
   },
   "lbl_language_selection":"Language Selection",
   "@lbl_language_selection":{

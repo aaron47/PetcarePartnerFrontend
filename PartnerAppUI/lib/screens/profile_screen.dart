@@ -60,23 +60,11 @@ class _ProfileScreenState extends BaseRouteState {
                         contentPadding: const EdgeInsets.only(
                           left: 1,
                         ),
-                        title: Text('Jenil',
+                        title: Text('Hamza',
                             style:
                                 Theme.of(context).primaryTextTheme.headline5),
-                        subtitle: const Text('Lives in India'),
+                        subtitle: const Text('Habite à Sousse'),
                       ),
-                      GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => UpdateProfileScreen()),
-                            );
-                          },
-                          child: Text(
-                            AppLocalizations.of(context).lbl_tap_here_to_edit,
-                            style: Theme.of(context).primaryTextTheme.bodyText1,
-                          ))
                     ],
                   )),
                 ],
@@ -161,7 +149,7 @@ class _ProfileScreenState extends BaseRouteState {
                       Text(AppLocalizations.of(context).lbl_about,
                           style: Theme.of(context).accentTextTheme.bodyText1),
                       Text(
-                        'Best Pet services in this area',
+                        'Meilleur vétérinaire à Sousse',
                         style: Theme.of(context).primaryTextTheme.bodyText1,
                       )
                     ],
@@ -202,9 +190,9 @@ class _ProfileScreenState extends BaseRouteState {
                                           radius: 30,
                                         ),
                                       ),
-                                      title: Text('Paradise Boarding'),
+                                      title: Text('Hebergement'),
                                       subtitle:
-                                          Text('Primium service provider'),
+                                          Text(''),
                                     ),
                                     Container(
                                         padding: const EdgeInsets.only(
@@ -240,12 +228,12 @@ class _ProfileScreenState extends BaseRouteState {
                                             width: 100,
                                             child: TextButton(
                                                 onPressed: () {
-                                                  Navigator.push(
-                                                    context,
-                                                    MaterialPageRoute(
-                                                        builder: (context) =>
-                                                            ServiceDetailViewScreen()),
-                                                  );
+                                                  // Navigator.push(
+                                                  //   context,
+                                                  //   MaterialPageRoute(
+                                                  //       builder: (context) =>
+                                                  //           ServiceDetailViewScreen()),
+                                                  // );
                                                 },
                                                 child: Text(
                                                   AppLocalizations.of(context)
