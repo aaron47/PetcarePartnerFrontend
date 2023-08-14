@@ -1,0 +1,756 @@
+{
+  "lbl_signup": " Sign Up",
+  "@lbl_signup": {
+    "description": "Sign Up"
+  },
+  "lbl_login": "Login",
+  "@lbl_login": {
+    "description": "Login"
+  },
+  "lbl_loading": "Loading...",
+  "@lbl_loading": {
+    "description": "Loading..."
+  },
+  "lbl_email_or_mobile_no": "Mobile no",
+  "@lbl_email_or_mobile_no": {
+    "description": " Mobile no"
+  },
+  "hnt_email_or_mobile_no":"Enter mobile no",
+  "@hnt_email_or_mobile_no": {
+    "description": "Enter mobile no"
+  },
+  "lbl_password":"Password",
+  "@lbl_password":{
+    "description": "Password"
+  },
+  "hnt_password":"Enter Password",
+  "@hnt_password":{
+    "description": "Enter Password"
+  },
+  "lbl_forgot_password":"Forgot your password?",
+  "@lbl_forgot_password": {
+    "description": "Forgot your password?"
+  },
+  "txt_dont_have_account":"Dont't have account?",
+  "@txt_dont_have_account": {
+    "description": "Dont't have account?"
+  },
+  "txt_reset_password":"Reset Password",
+  "@txt_reset_password": {
+    "description": "Reset Password"
+  },
+  "txt_Enter_the_email_address_associcated_with_your_account":"Enter the email address associcated with your account,and  we'll email you a link to reset your password.",
+  "@txt_Enter_the_email_address_associcated_with_your_account": {
+    "description": "Enter the email address associcated with your account,and  we'll email you a link to reset your password."
+  },
+  "lbl_email":"Email",
+  "@lbl_email": {
+    "description": "Email"
+  },
+  "hnt_email":"Enter email",
+  "@hnt_email": {
+    "description": "Enter email"
+  },
+  "btn_send_reset_link":"Send Reset Link",
+  "@btn_send_reset_link": {
+    "description": "Send Reset Link"
+  },
+  "lbl_back":"Back",
+  "@lbl_back": {
+    "description": "Back"
+  },
+  "lbl_enter_email":"Enter email ",
+  "@lbl_enter_email": {
+    "description":"enter email"
+  },
+  "hnt_enter_eamil":"enter email",
+  "@hnt_enter_eamil":{
+    "description":"enter email"
+  },
+  "lbl_username":"Username",
+  "@lbl_username":{
+    "description":"Username"
+  },
+  "hnt_username":"Enter username",
+  "@hnt_username":{
+    "description":"Enter username"
+  },
+  "btn_next":"Next",
+  "@btn_next":{
+    "description":"Next"
+  },
+  "txt_already_have_account":"Already  have account?",
+  "@txt_already_have_account":{
+    "description":"Already have account?"
+  },
+  "txt_login":"Login",
+  "@txt_login":{
+    "description":"Login"
+  },
+  "lbl_otp_verification":"OTP Verfication",
+  "@lbl_otp_verification":{
+    "description":"OTP Verfication"
+  },
+  "lbl_enter_otp":"Enter OTP",
+  "@lbl_enter_otp":{
+    "description":"Enter OTP"
+  },
+  "txt_we_have_sent_the_login_otp_on_your_mobile_number":"We have setn the login OTP on Your mobile number",
+  "@txt_we_have_sent_the_login_otp_on_your_mobile_number":{
+    "description":"We have setn the login OTP on Your mobile number"
+  },
+  "lbl_home_screen":"Home Screen",
+  "@lbl_home_screen":{
+    "description":"Home Screen"
+  },
+  "lbl_weekly_earn":"Weekly Earn",
+  "@lbl_weekly_earn":{
+    "description":"Weekly Earn"
+  },
+  "lbl_todays_earning":"Today's Earning",
+  "@lbl_todays_earning":{
+    "description":"Today's Earning"
+  },
+  "lbl_todays_orders":"Today's Orders",
+  "@lbl_todays_orders":{
+    "description":"Today's Orders"
+  },
+  "lbl_todays_service":"Today's Service",
+  "@lbl_todays_service":{
+    "description":"Today's Service"
+  },
+  "lbl_todays_requests":"Today's Requests",
+  "@lbl_todays_requests":{
+    "description":"Today's Requests"
+  },
+  "lbl_completed_goals":"Completed Goals",
+  "@lbl_completed_goals":{
+    "description":"Completed Goals"
+  },
+  "lbl_home":"Home",
+  "@lbl_home":{
+    "description":"Home"
+  },
+  "lbl_blogs":"Blogs",
+  "@lbl_blogs":{
+    "description":"Blogs"
+  },
+  "lbl_request":"Request",
+  "@lbl_request":{
+    "description":"Request"
+  },
+  "lbl_services":"Services",
+  "@lbl_services":{
+    "description":"Services"
+  },
+  "lbl_profile":"Profile",
+  "@lbl_profile":{
+    "description":"Profile"
+  },
+  "lbl_requests":"Requests",
+  "@lbl_requests":{
+    "description":"Requests"
+  },
+  "lbl_all":"All",
+  "@lbl_all":{
+    "description":"All"
+  },
+  "lbl_hired":"Hired",
+  "@lbl_hired":{
+    "description":"Hired"
+  },
+  "lbl_upcoming":"Upcoming",
+  "@lbl_upcoming":{
+    "description":"Upcoming"
+  },
+  "lbl_in_progress":"In Progress",
+  "@lbl_in_progress":{
+    "description":"In Progress"
+  },
+  "lbl_comleted":"Completed",
+  "@lbl_comleted":{
+    "description":"Completed"
+  },
+  "btn_decline":"Decline",
+  "@btn_decline":{
+    "description":"Decline"
+  },
+  "btn_accept":"Accept",
+  "@btn_accept":{
+    "description":"Accept"
+  },
+  "lbl_request_detail":"Request Detail",
+  "@lbl_request_detail":{
+    "description":"Request Detail"
+  },
+  "lbl_view_pet_owner_profile":"View Pet Owner Profile",
+  "@lbl_view_pet_owner_profile":{
+    "description":"View Pet Owner Profile"
+  },
+  "lbl_pet_profile":"Pet Profile",
+  "@lbl_pet_profile":{
+    "description":"Pet Profile"
+  },
+  "lbl_pet_name":"Name: ",
+  "@lbl_pet_name":{
+    "description":"Name: "
+  },
+  "lbl_pet_type":"Type: ",
+  "@lbl_pet_type":{
+    "description":"Type: "
+  },
+  "lbl_pet_size":"Size: ",
+  "@lbl_pet_size":{
+    "description":"Size: "
+  },
+  "txt_date_service_required":"Date service required:",
+  "@txt_date_service_required":{
+    "description":"Date service required: "
+  },
+  "txt_number_of_days_required":"Number of day(s) required:",
+  "@txt_number_of_days_required":{
+    "description":"Number of day(s) required:"
+  },
+  "txt_additional_inforamation_you_should_know":"Additional information you should know:",
+  "@txt_additional_inforamation_you_should_know":{
+    "description":"Additional information you should know:"
+  },
+  "lbl_blog_details":"Blog Detail",
+  "@lbl_blog_details":{
+    "description":"Blogs Detail"
+  },
+  "lbl_add_new_blog":"Add New Blog",
+  "@lbl_add_new_blog":{
+    "description":"Add New Blog"
+  },
+  "lbl_title":"Title",
+  "@lbl_title":{
+    "description":"Title"
+  },
+  "hnt_enter_title":"Enter title",
+  "@hnt_enter_title":{
+    "description":"Enter title"
+  },
+  "lbl_details":"Details",
+  "@lbl_details":{
+    "description":"Details"
+  },
+  "lbl_blog_details_description":"Enter details description",
+  "@lbl_blog_details_description":{
+    "description":"Enter details description"
+  },
+  "lbl_blog_date":"Date Time",
+  "@lbl_date":{
+    "description":"Date Time"
+  },
+  "btn_verify_blogs":"Verify Blogs",
+  "@btn_verify_blogs":{
+    "description":"Verify Blogs"
+  },
+  "lbl_documents_verification":"Documents Verification",
+  "@lbl_documents_verification":{
+    "description":"Documents Verification"
+  },
+  "lbl_tap_to_add_image":"Tap to add image",
+  "@lbl_tap_to_add_image":{
+    "description":"Tap to add image"
+  },
+  "btn_apply_for_verification":"Apply for Verification",
+  "@btn_apply_for_verification":{
+    "description":"Apply for Verification"
+  },
+  "lbl_select_your_services":"Select Your Services",
+  "@lbl_select_your_services":{
+    "description":"Select Your Services"
+  },
+  "lbl_profile":"Profile",
+  "@lbl_profile":{
+    "description":"Profile"
+  },
+  "lbl_tap_here_to_edit":"Tap here to edit",
+  "@lbl_tap_here_to_edit":{
+    "description":"Tap here to edit"
+  },
+  "lbl_balance":"Balance",
+  "@lbl_balance":{
+    "description":"Balance"
+  },
+  "lbl_creadits":"Creadits",
+  "@lbl_creadits":{
+    "description":"Creadits"
+  },
+  "lbl_review":"Reviews",
+  "@lbl_review":{
+    "description":"Reviews"
+  },
+  "lbl_about":"About",
+  "@lbl_about":{
+    "description":"About"
+  },
+  "btn_edit":"Edit",
+  "@btn_edit":{
+    "description":"Edit"
+  },
+  "btn_view":"View",
+  "@btn_view":{
+    "description":"View"
+  },
+  "lbl_service_detail":"Service Detail",
+  "@lbl_service_detail":{
+    "description":"Service Detail"
+  },
+  "lbl_service_summary":"Service Summary.",
+  "@lbl_service_summary":{
+    "description":"Service Summary."
+  },
+  "lbl_distance_willing_to_travel_to_visit_your_home":"Distance willing to travel to visit your home.",
+  "@lbl_distance_willing_to_travel_to_visit_your_home":{
+    "description":"Distance willing to travel to visit your home."
+  },
+  "lbl_accepted_dog_size":"Accepted dog size.",
+  "@lbl_accepted_dog_size":{
+    "description":"Accepted dog size."
+  },
+  "lbl_the_length_of_each_Walk":"'The length of each walk.",
+  "@lbl_the_length_of_each_Walk":{
+    "description":"'The length of each walk."
+  },
+  "lbl_last_minute_bookings":" 'Last minute bookings.",
+  "@lbl_last_minute_bookings":{
+    "description":" 'Last minute bookings."
+  },
+  "lbl_my_wallet":"My Wallet",
+  "@lbl_my_wallet":{
+    "description":"My Wallet"
+  },
+  "lbl_coupons":"Coupons",
+  "@lbl_coupons":{
+    "description":"Coupons"
+  },
+  "lbl_gallery":"Gallery",
+  "@lbl_gallery":{
+    "description":"Gallery"
+  },
+  "lbl_add_products":"Add Products",
+  "@lbl_add_products":{
+    "description":"Add Products"
+  },
+  "lbl_orders":"Orders",
+  "@lbl_orders":{
+    "description":"Orders"
+  },
+  "lbl_settings":"Settings",
+  "@lbl_settings":{
+    "description":"Settings"
+  },
+  "lbl_signout":"Sign Out",
+  "@lbl_signout":{
+    "description":"Sign Out"
+  },
+  "lbl_exit":"Exit",
+  "@lbl_exit":{
+    "description":"Exit"
+  },
+  "txt_are_you_sure_you_want_to_exit_app":"Are you sure you want to exit app?",
+  "@txt_are_you_sure_you_want_to_exit_app":{
+    "description":"Are you sure you want to exit app?"
+  },
+  "btn_cancel":"Cancel",
+  "@btn_cancel":{
+    "description":"Cancel"
+  },
+  "btn_logout":"Logout",
+  "@btn_logout":{
+    "description":"Logout"
+  },
+  "txt_total_earning":"Totla Earning",
+  "@txt_total_earning":{
+    "description":"Totla Earning"
+  },
+  "txt_admin_share_spent_by_admin":"Admin Share spent by Admin",
+  "@txt_admin_share_spent_by_admin":{
+    "description":"Admin Share spent by Admin"
+  },
+  "txt_admin_share_pending_at_vendor":"Admin Share pending at vendor",
+  "@txt_admin_share_pending_at_vendor":{
+    "description":"Admin Share pending at vendor"
+  },
+  "txt_total_vendor_share_pending_at_admin":"Total Vendor share pending at Admin",
+  "@txt_total_vendor_share_pending_at_admin":{
+    "description":"Total Vendor share pending at Admin"
+  },
+  "lbl_coupons":"Coupons",
+  "@lbl_coupons":{
+    "description":"Coupons"
+  },
+  "lbl_off":"off",
+  "@lbl_off":{
+    "description":"off"
+  },
+  "lbl_delete":"Delete",
+  "@lbl_delete":{
+    "description":"Delete"
+  },
+  "btn_add_new_coupon":"Add New Coupon",
+  "@btn_add_new_coupon":{
+    "description":"Add New Coupon"
+  },
+  "lbl_add_coupon":"Add Coupon",
+  "@lbl_add_coupon":{
+    "description":"Add Coupon"
+  },
+  "lbl_coupon_name":"Coupon Name",
+  "@lbl_coupon_name":{
+    "description":"Coupon Name"
+  },
+  "hnt_enter_coupon_name":"Enter coupon name",
+  "@hnt_enter_coupon_name":{
+    "description":"Enter coupon name"
+  },
+  "lbl_coupon_number":"Coupon code",
+  "@lbl_coupon_number":{
+    "description":"Coupon code"
+  },
+  "hnt_enter_coupon_number":"Enter coupon code",
+  "@hnt_enter_coupon_number":{
+    "description":"Enter coupon code"
+  },
+  "lbl_coupon_description":"Coupon Description",
+  "@lbl_coupon_description":{
+    "description":"Coupon Description"
+  },
+  "lbl_enter_coupon_details_description":"Enter coupon details description",
+  "@lbl_enter_coupon_details_description":{
+    "description":"Enter coupon details description"
+  },
+  "lbl_min_amount":"Min Order Amount",
+  "@lbl_min_amount":{
+    "description":"Min Order Amount"
+  },
+  "lbl_enter_order_amount":"Enter order amount",
+  "@lbl_enter_order_amount":{
+    "description":"Enter order amount"
+  },
+  "lbl_max_amount":"Maximum Discount Amount",
+  "@lbl_max_amount":{
+    "description":"Maximum Discount amount"
+  },
+  "lbl_coupon_value":"Enter Coupon value",
+  "@lbl_coupon_value":{
+    "description":"Enter Coupon Value"
+  },
+  "lbl_select_start_date":"Select Start Date",
+  "@lbl_select_start_date":{
+    "description":"Select Start Date"
+  },
+  "lbl_select_end_date":"Select End Date",
+  "@lbl_select_end_date":{
+    "description":"Select End Date"
+  },
+  "btn_save_coupon": "Save Coupon",
+  "@btn_save_coupon":{
+    "description":"Save Coupon"
+  },
+  "lbl_add_gallery":"Gallery",
+  "@lbl_and_gallery":{
+    "description":"Gallery"
+  },
+  "lbl_save":"Save",
+  "@lbl_save":{
+    "description":"Save"
+  },
+  "btn_add_new_gallery":"Add New Gallery",
+  "@btn_add_new_gallery":{
+    "description":"Add New Gallery"
+  },
+  "lbl_add_new_product":"Add New Product",
+  "@lbl_add_new_product":{
+    "description":"Add New Product"
+  },
+  "lbl_product_name":"Product Name",
+  "@lbl_product_name":{
+    "description":"Product Name"
+  },
+  "hnt_enter_productname":"Enter productname",
+  "@hnt_enter_productname":{
+    "description":"Enter productname"
+  },
+  "lbl_price":"Price",
+  "@lbl_price":{
+    "description":"Price"
+  },
+  "hnt_enter_productprice":"Enter productprice",
+  "@hnt_enter_productprice":{
+    "description":"Enter productprice"
+  },
+  "lbl_product_description":"Description",
+  "@lbl_product_description":{
+    "description":"Description"
+  },
+  "hnt_enter_product_details_description":"Enter product details description",
+  "@hnt_enter_product_details_description":{
+    "description":"Enter product details description"
+  },
+  "lbl_product_quantity":"Quantity",
+  "@lbl_product_quantity":{
+    "description":"Quantity"
+  },
+  "hnt_product_qantity":"Enter quantity",
+  "@hnt_product_qantity":{
+    "description":"Enter quantity"
+  },
+  "btn_save_product":"Save Product",
+  "@btn_save_product":{
+    "description":"Save Product"
+  },
+  "lbl_products":"Products",
+  "@lbl_products":{
+    "description":"Products"
+  },
+  "lbl_account":"Account",
+  "@lbl_account":{
+    "description":"Account"
+  },
+  "lbl_language_selection":"Language Selection",
+  "@lbl_language_selection":{
+    "description":"Language Selection"
+  },
+  "lbl_change_password":"Change Password",
+  "@lbl_change_password":{
+    "description":"Change Password"
+  },
+  "lbl_help_supports":"Help & Supports",
+  "@lbl_help_supports":{
+    "description":"Help & Supports"
+  },
+  "lbl_about_us":"About Us",
+  "@lbl_about_us":{
+    "description":"About Us"
+  },
+  "lbl_rate_us":"Rate Us",
+  "@lbl_rate_us":{
+    "description":"Rate Us"
+  },
+  "lbl_logout":"Logout",
+  "@lbl_logout":{
+    "description":"Logout"
+  },
+  "lbl_update_profile":"Update Profile",
+  "@lbl_update_profile":{
+    "description":"Update Profile"
+  },
+  "txt_change_profile_picture":"Change Profile Picture",
+  "@txt_change_profile_picture":{
+    "description":"Change Profile Picture"
+  },
+  "lbl_enter_username":"Enter username",
+  "@lbl_enter_username":{
+    "description":"Enter username"
+  },
+  "lbl_mobile_number":"Mobile Number",
+  "@lbl_mobile_number":{
+    "description":"Mobile Number"
+  },
+  "lbl_enter_mobile_number":"Enter mobile number",
+  "@lbl_enter_mobile_number":{
+    "description":"Enter mobile number"
+  },
+  "lbl_address":"Address",
+  "@lbl_address":{
+    "description":"Address"
+  },
+  "hnt_enter_your_address_details":"Enter your address details",
+  "@hnt_enter_your_address_details":{
+    "description":"Enter your address details"
+  },
+  "lbl_about_me":"About Me",
+  "@lbl_about_me":{
+    "description":"bout Me"
+  },
+  "hnt_enter_about_your_details":"Enter about your details",
+  "@hnt_enter_about_your_details":{
+    "description":"Enter about your details"
+  },
+  "lbl_update":"Update",
+  "@lbl_update":{
+    "description":"Update"
+  },
+  "lbl_change_password":"Change Password",
+  "@lbl_change_password":{
+    "description":"Change Password"
+  },
+  "txt_create_new_password":"Create New Password",
+  "@txt_create_new_password":{
+    "description":"Create New Password"
+  },
+  "txt_you_are_just_one_step_away_from_recovering_your_account": "You are just one step away form recovering your account",
+  "@txt_you_are_just_one_step_away_from_recovering_your_account":{
+    "description":"You are just one step away form recovering your account"
+  },
+  "lbl_old_password":"Old Password",
+  "@lbl_old_password":{
+    "description":"Old Password"
+  },
+  "hnt_enter_old_password":"Enter old Password",
+  "@hnt_enter_old_password":{
+    "description":"Enter old Password"
+  },
+  "lbl_new_password":"New Password",
+  "@lbl_new_password":{
+    "description":"New Password"
+  },
+  "hnt_enter_new_password":"Enter New Password",
+  "@hnt_enter_new_password":{
+    "description":"Enter New Password"
+  },
+  "lbl_confirm_password":"Confirm Password",
+  "@lbl_confirm_password":{
+    "description":"Confirm Password"
+  },
+  "hnt_enter_confirm_password":"Enter Confirm Password",
+  "@hnt_enter_confirm_password":{
+    "description":"Enter Confirm Password"
+  },
+  "hnt_enter_email_address":"Enter email address",
+  "@hnt_enter_about_your_details":{
+    "description":"Enter email address"
+  },
+  "btn_submit":"Submit",
+  "@btn_submit":{
+    "description":"Submit"
+  },
+  "lbl_rate_your_experience":"Rate Your Experience",
+  "@lbl_rate_your_experience":{
+    "description":"Rate Your Experience"
+  },
+  "txt_rate_service_experience": "Rate Service Experience",
+  "@txt_rate_service_experience":{
+    "description":"Rate Service Experience"
+  },
+  "lbl_comment":"Comment",
+  "@lbl_comment":{
+    "description":"Comment"
+  },
+  "hnt_write_comments_here":"Write Comments here",
+  "@hnt_write_comments_here":{
+    "description":"Write Comments here"
+  },
+  "lbl_add_pet_Photos":"Add Pet Photos",
+  "@lbl_add_pet_Photos":{
+    "description":"Add Pet Photos"
+  },
+  "lbl_add_home_photos":"Add Home Photos",
+  "@lbl_add_pet_Photos":{
+    "description":"Add Home Photos"
+  },
+  "lbl_service_name":"Service Name",
+  "@lbl_service_name":{
+    "description":"Service Name"
+  },
+  "lbl_add_service_rate":"Add Service Rate",
+  "@lbl_add_service_rate":{
+    "description":"Add Service Rate"
+  },
+  "lbl_service_type":"Service Type",
+  "@lbl_service_type":{
+    "description":"Service Type"
+  },
+  "hnt_pet_boarding":"Pet Boarding",
+  "@hnt_pet_boarding":{
+    "description":"Pet Boarding"
+  },
+  "lbl_description":"Description",
+  "@lbl_description":{
+    "description":"Description"
+  },
+  "lbl_your_price":"Your Price",
+  "@lbl_your_price":{
+    "description":"Your Price"
+  },
+  "hnt_inr":"INR",
+  "@hnt_inr":{
+    "description":"INR"
+  },
+  "btn_save_rate":"Save Rate",
+  "@btn_save_rate":{
+    "description":"Save Rate"
+  },
+  "txt_pet_owners_will_fell_more_comfortable_knowing_waht_is_include_is_this_quote":"Pet owners will fell more comfortable knowing what is include in this quote",
+  "@txt_pet_owners_will_fell_more_comfortable_knowing_waht_is_include_is_this_quote":{
+    "description":"Pet owners will fell more comfortable knowing what is include in this quote"
+  },
+  "lbl_notifications":"Notifications",
+  "@lbl_notifications":{
+    "description":"Notifications"
+  },
+  "txt_notification_will_shown_here":"Notification will shown here",
+  "@txt_notification_will_shown_here":{
+    "description":"Notification will shown here"
+  },
+  "btn_offer_services_now":"Offer Services Now",
+  "@btn_offer_services_now":{
+    "description":"Offer Services Now"
+  },
+  "lbl_agreement":"Agreement",
+  "@lbl_agreement":{
+    "description":"Agreement"
+  },
+  "txt_terms_and_condition":"Terms and Condition",
+  "@txt_terms_and_condition":{
+    "description":"Terms and Condition"
+  },
+  "txt_i_have_read_and_accept_terms_and_conditions":"I have read and accept terms and conditions",
+  "@txt_i_have_read_and_accept_terms_and_conditions":{
+    "description":"I have read and accept terms and conditions"
+  },
+  "lbl_add_id_photos":"Add ID Photos",
+  "@lbl_add_id_photos":{
+    "description":"Add ID Photos"
+  },
+  "lbl_select_language":"Select Language",
+  "@lbl_select_language":{
+    "description":"Select Language"
+  },
+  "btn_follow":"follow",
+  "@btn_follow":{
+    "description":"follow"
+  },
+  "txt_password_reset":"Password Reset",
+  "@txt_password_reset":{
+    "description":"Password Reset"
+  },
+  "txt_you_are_all_set_to_go":"you are all set to go",
+  "@txt_you_are_all_set_to_go":{
+    "description":"you are all set to go"
+  },
+  "lbl_followers":"Followers",
+  "@lbl_followers":{
+    "description":"Followers"
+  },
+  "lbl_followings":"Followings",
+  "@lbl_followings":{
+    "description":"Followings"
+  },
+  "lbl_reviews":"Reviews",
+  "@lbl_reviews":{
+    "description":"Reviews"
+  },
+  "txt_badges":"Badges",
+  "@txt_badges":{
+    "description":"Badges"
+  },
+  "txt_about":"About",
+  "@txt_about":{
+    "description":"About"
+  },
+  "lbl_coupon_value":"Coupon Value",
+  "@lbl_coupon_value":{
+    "description":"Coupon Value"
+  },
+  "txt_add_image":"Add Image",
+  "@txt_add_image":{
+    "description":"Add Image"
+  }
+
+
+}
