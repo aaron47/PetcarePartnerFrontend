@@ -105,6 +105,9 @@ class ApiController extends GetxController {
   }
 
   Future<void> fetchUserServices(String userEmail) async {
+    if (services.length > 0) {
+      return;
+    }
     isLoading.value = true;
     try {
       var userServices = await ApiService.findUserServices(userEmail);

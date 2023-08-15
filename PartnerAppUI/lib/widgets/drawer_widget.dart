@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
 import 'package:pet_patner_demo/models/businessLayer/baseRoute.dart';
 import 'package:pet_patner_demo/screens/coupon_list_screen.dart';
 import 'package:pet_patner_demo/screens/gallery_list_screen.dart';
@@ -11,6 +12,8 @@ import 'package:pet_patner_demo/screens/productlist_screen.dart';
 import 'package:pet_patner_demo/screens/setting_Screen.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import '../controllers/ApiController.dart';
+
 class DrawerWidget extends BaseRoute {
   DrawerWidget({a, o}) : super(a: a, o: o, r: 'DrawerWidget');
   @override
@@ -18,6 +21,9 @@ class DrawerWidget extends BaseRoute {
 }
 
 class _DrawerWidgetState extends BaseRouteState {
+  final ApiController apiController = Get.find<ApiController>();
+
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -39,11 +45,11 @@ class _DrawerWidgetState extends BaseRouteState {
                           ),
                         )),
                     title: Text(
-                      'Mohammed Patel',
+                      apiController.user.value.fullName,
                       style: Theme.of(context).textTheme.headline5,
                     ),
                     subtitle: Text(
-                      '9525098250',
+                      apiController.user.value.phone,
                       style: Theme.of(context).textTheme.headline6,
                     )),
               ),

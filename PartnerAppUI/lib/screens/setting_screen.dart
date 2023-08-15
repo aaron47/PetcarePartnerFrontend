@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
+import 'package:pet_patner_demo/controllers/ApiController.dart';
 import 'package:pet_patner_demo/models/businessLayer/baseRoute.dart';
 import 'package:pet_patner_demo/screens/about_us_screen.dart';
 import 'package:pet_patner_demo/screens/add_rating_screen.dart';
@@ -23,6 +25,7 @@ class _SettingScreenState extends BaseRouteState {
   bool isloading = true;
 
   _SettingScreenState() : super();
+  final ApiController apiController = Get.find<ApiController>();
 
   @override
   Widget build(BuildContext context) {
@@ -58,7 +61,7 @@ class _SettingScreenState extends BaseRouteState {
                         ),
                         Container(
                             margin: const EdgeInsets.all(15),
-                            child: Text('Mohammed Patel',
+                            child: Text(apiController.user.value.fullName,
                                 style: Theme.of(context)
                                     .primaryTextTheme
                                     .headline6)),
