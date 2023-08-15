@@ -1,24 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:get/get.dart';
 import 'package:pet_patner_demo/models/businessLayer/baseRoute.dart';
+import 'package:pet_patner_demo/network/remote/Requests/add_offering_user_request.dart';
 import 'package:pet_patner_demo/screens/document_verification_screen.dart';
 import 'package:pet_patner_demo/screens/login_screen.dart';
 
+import '../controllers/ApiController.dart';
+
 class ServiceSelectionScreen extends BaseRoute {
-  ServiceSelectionScreen({a, o}) : super(a: a, o: o, r: 'ServiceSelectionScreen');
+  ServiceSelectionScreen({a, o})
+      : super(a: a, o: o, r: 'ServiceSelectionScreen');
+
   @override
   _ServiceSelectionScreenState createState() => _ServiceSelectionScreenState();
 }
 
 class _ServiceSelectionScreenState extends BaseRouteState {
-  Map<String, bool> numbers = {
-    'Pet Bording': false,
-    'Dog Walking': false,
-    'Veterinarian': false,
-    'Product Store': false,
+  Map<String, Map<String, dynamic>> numbers = {
+    'Hebergement pour animaux': {
+      "value": false,
+      "id": "64dbb0412acff23951e6f3f1",
+    },
+    "Promenade d'animaux": {
+      "value": false,
+      "id": "64dbb0742acff23951e6f3f4",
+    },
+    'Vétérinaire': {
+      "value": false,
+      "id": "64dbb0872acff23951e6f3f7",
+    },
+    'Marche Produits': {
+      "value": false,
+      "id": "64dbb0972acff23951e6f3fa",
+    },
   };
 
   var holder_1 = [];
+  final ApiController apiController = Get.find<ApiController>();
 
   @override
   Widget build(BuildContext context) {
@@ -61,7 +80,7 @@ class _ServiceSelectionScreenState extends BaseRouteState {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  AppLocalizations.of(context).lbl_select_your_services,
+                  "Selectionnez vos services",
                   style: Theme.of(context).primaryTextTheme.headline4,
                 )
               ],
@@ -81,12 +100,12 @@ class _ServiceSelectionScreenState extends BaseRouteState {
                                 key,
                                 style: Theme.of(context).textTheme.headline4,
                               ),
-                              value: numbers[key],
+                              value: numbers[key]["value"],
                               activeColor: Theme.of(context).primaryColor,
                               checkColor: Colors.white,
-                              onChanged: (bool value) {
+                              onChanged: (value) {
                                 setState(() {
-                                  numbers[key] = value;
+                                  numbers[key]["value"] = value;
                                 });
                               },
                             );
@@ -101,10 +120,23 @@ class _ServiceSelectionScreenState extends BaseRouteState {
                       padding: const EdgeInsets.only(left: 10, right: 10),
                       width: MediaQuery.of(context).size.width,
                       child: TextButton(
-                          onPressed: () {
+                          onPressed: () async {
+                            numbers.forEach((key, value) async {
+                              if (value["value"] == true) {
+                                var addOfferingUserRequest =
+                                    AddOfferingUserRequest(
+                                        serviceId: value["id"],
+                                        userEmail:
+                                            apiController.user.value.email);
+                                await apiController
+                                    .addOfferingUser(addOfferingUserRequest);
+                              }
+                            });
+
                             Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (context) => DocumentVerificationScreen()),
+                              MaterialPageRoute(
+                                  builder: (context) => LoginScreen()),
                             );
                           },
                           child: Text(
@@ -121,8 +153,8 @@ class _ServiceSelectionScreenState extends BaseRouteState {
 
   getItems() {
     numbers.forEach((key, value) {
-      if (value == true) {
-        holder_1.add(key);
+      if (value["value"] == true) {
+        holder_1.add(value["id"]);
       }
     });
 
