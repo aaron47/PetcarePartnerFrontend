@@ -30,6 +30,8 @@ class _SignupScreenState extends BaseRouteState {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
   final TextEditingController _fullNameController = TextEditingController();
+  final TextEditingController _imageLinkController = TextEditingController();
+  final TextEditingController _addressController = TextEditingController();
   final TextEditingController _phoneController = TextEditingController();
   final role = "sitter";
 
@@ -158,6 +160,50 @@ class _SignupScreenState extends BaseRouteState {
                           ),
                         ),
                       ),
+                      Container(
+                        child: Card(
+                          margin: EdgeInsets.all(10),
+                          child: TextFormField(
+                            // focusNode: _fUsername,
+                            controller: _imageLinkController,
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Veuillez entrer un lien de votre image!';
+                              }
+                              return null;
+                            },
+                            onEditingComplete: () {
+                              FocusScope.of(context).requestFocus(_fPassword);
+                            },
+                            decoration: InputDecoration(
+                              labelText: "Lien d'image",
+                              hintText: "Lien d'image",
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        child: Card(
+                          margin: EdgeInsets.all(10),
+                          child: TextFormField(
+                            // focusNode: _fUsername,
+                            controller: _addressController,
+                            validator: (value) {
+                              if (value == null || value.isEmpty) {
+                                return 'Veuillez entrer votre adresse!';
+                              }
+                              return null;
+                            },
+                            onEditingComplete: () {
+                              FocusScope.of(context).requestFocus(_fPassword);
+                            },
+                            decoration: InputDecoration(
+                              labelText: "Address",
+                              hintText: "Address",
+                            ),
+                          ),
+                        ),
+                      ),
                       Card(
                         margin: const EdgeInsets.all(10),
                         child: TextFormField(
@@ -232,6 +278,8 @@ class _SignupScreenState extends BaseRouteState {
                                 _selectedGender.toLowerCase(),
                                 role,
                                 _phoneController.text,
+                                _imageLinkController.text,
+                                _addressController.text,
                                 _passwordController.text,
                               );
 

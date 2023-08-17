@@ -42,12 +42,14 @@ class ApiController extends GetxController {
   }
 
   Future<ResponseHelper> signUpUser(
-    String fullName,
-    String email,
-    String gender,
-    String role,
-    String phone,
-    String password,
+      String fullName,
+      String email,
+      String gender,
+      String role,
+      String phone,
+      String imageLink,
+      String address,
+      String password,
   ) async {
     isLoading.value = true;
     try {
@@ -55,6 +57,8 @@ class ApiController extends GetxController {
           fullName: fullName,
           email: email,
           phone: phone,
+          imageLink: imageLink,
+          address: address,
           password: password,
           gender: gender,
           role: role);

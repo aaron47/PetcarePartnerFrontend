@@ -60,9 +60,9 @@ class _ProfileScreenState extends BaseRouteState {
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                     ),
-                    child: const CircleAvatar(
+                    child: CircleAvatar(
                       backgroundImage:
-                          AssetImage('assets/images/userprofile.jpg'),
+                          NetworkImage(apiController.user.value.imageLink),
                       radius: 40,
                     ),
                   ),

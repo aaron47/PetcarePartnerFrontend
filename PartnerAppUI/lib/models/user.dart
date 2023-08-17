@@ -12,12 +12,16 @@ class User {
   final String role;
   final String phone;
   final String gender;
+  final String imageLink;
+  final String address;
 
   User({
     @required this.fullName,
     @required this.email,
     @required this.role,
     @required this.phone,
+    @required this.imageLink,
+    @required this.address,
     @required this.gender,
   });
 
