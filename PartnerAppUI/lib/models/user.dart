@@ -31,6 +31,8 @@ class User {
         role: json["role"],
         phone: json["phone"],
         gender: json["gender"],
+        imageLink: json["imageLink"],
+        address: json["address"],
       );
 
   Map<String, dynamic> toJson() => {
@@ -39,5 +41,7 @@ class User {
         "role": role,
         "phone": phone,
         "gender": gender,
+        "imageLink": imageLink,
+        "address": address,
       };
 }
