@@ -62,7 +62,7 @@ class _ProfileScreenState extends BaseRouteState {
                     ),
                     child: CircleAvatar(
                       backgroundImage:
-                          NetworkImage(apiController.user.value.imageLink),
+                          NetworkImage(apiController.user.value.imageLink) ?? '',
                       radius: 40,
                     ),
                   ),
