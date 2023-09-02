@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:get/get.dart';
+import 'package:pet_patner_demo/controllers/ApiController.dart';
 import 'package:pet_patner_demo/models/businessLayer/baseRoute.dart';
+import 'package:pet_patner_demo/screens/add_service_screen.dart';
 import 'package:pet_patner_demo/screens/notification_screen.dart';
 import 'package:pet_patner_demo/screens/service_agreement_screen.dart';
 import 'package:pet_patner_demo/widgets/drawer_widget.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:pet_patner_demo/widgets/pet_item.dart';
 
 class OfferServiceScreen extends BaseRoute {
   OfferServiceScreen({a, o}) : super(a: a, o: o, r: 'OfferServiceScreen');
@@ -13,6 +17,16 @@ class OfferServiceScreen extends BaseRoute {
 }
 
 class _OfferServiceScreenState extends BaseRouteState {
+  final ApiController apiController = Get.find<ApiController>();
+
+  @override
+  void initState() {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await apiController.fetchServices();
+    });
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,59 +38,76 @@ class _OfferServiceScreenState extends BaseRouteState {
         automaticallyImplyLeading: false,
         actions: [
           Container(
-              padding: const EdgeInsets.all(10),
-              child: IconButton(
-                  icon: const FaIcon(FontAwesomeIcons.bell),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => NotificationScreen()),
-                    );
-                  }))
-        ],
-      ),
-      body: SingleChildScrollView(
-        child: Column(children: [
-          //center button
-          Center(
-            child: Padding(
-              padding:
-                  EdgeInsets.only(top: MediaQuery.of(context).size.height / 4),
-              child: Column(
-                children: [
-                  SizedBox(
-                    height: 200,
-                    width: MediaQuery.of(context).size.width,
-                    child: SizedBox(
-                      height: 200,
-                      width: MediaQuery.of(context).size.width,
-                      child: Image.asset(
-                        'assets/images/splash_logo.png',
-                      ),
-                    ),
+            padding: const EdgeInsets.all(10),
+            child: IconButton(
+              icon: const FaIcon(FontAwesomeIcons.bell),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => NotificationScreen(),
                   ),
-                  OutlinedButton(
-                      style: OutlinedButton.styleFrom(
-                        side: BorderSide(
-                            width: 1.0, color: Theme.of(context).primaryColor),
-                      ),
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => ServiceAgreementScreen()),
-                        );
-                      },
-                      child: Text(
-                        AppLocalizations.of(context).btn_offer_services_now,
-                        style: Theme.of(context).primaryTextTheme.bodyText2,
-                      ))
-                ],
-              ),
+                );
+              },
             ),
           )
-        ]),
+        ],
+      ),
+      body: Obx(
+        () => SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(10),
+            child: Column(children: [
+              Align(
+                alignment: Alignment.topRight,
+                child: OutlinedButton(
+                  style: OutlinedButton.styleFrom(
+                    side: BorderSide(
+                        width: 1.0, color: Theme.of(context).primaryColor),
+                  ),
+                  onPressed: () {
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //     builder: (context) => ServiceAgreementScreen(),
+                    //   ),
+                    // );
+                     Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => AddServiceScreen(),
+                      ),
+                    );
+                  },
+                  child: Text(
+                    AppLocalizations.of(context).btn_offer_services_now,
+                    style: Theme.of(context).primaryTextTheme.bodyText2,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              !apiController.isLoadingServices.value
+                  ? ListView.builder(
+                      itemBuilder: ((context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 10),
+                          child: PetItem(
+                            service: apiController.servicesList[index],
+                          ),
+                        );
+                      }),
+                      shrinkWrap: true,
+                      physics: NeverScrollableScrollPhysics(),
+                      itemCount: apiController.servicesList.length,
+                    )
+                  : Center(
+                      child: CircularProgressIndicator(),
+                    ),
+            ]),
+          ),
+        ),
       ),
     );
   }

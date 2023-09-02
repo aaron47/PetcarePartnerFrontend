@@ -55,6 +55,8 @@ dependencies:
   motion_toast: ^2.7.8
   dio: ^5.3.2
   get: ^4.6.5
+  cached_network_image: ^3.2.1
+  duration_picker: ^1.1.1
  
 dev_dependencies:
   flutter_test:

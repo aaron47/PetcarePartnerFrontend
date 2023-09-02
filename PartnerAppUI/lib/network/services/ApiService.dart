@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:pet_patner_demo/models/service_model.dart';
 
 import '../../models/pet.dart';
 import '../../models/user.dart';
@@ -68,9 +69,8 @@ class ApiService {
   static Future<List<Pet>> findAllUserPets(String userEmail) async {
     try {
       final response = await _dio.get(ApiEndPoints.GET_PETS_URL + userEmail);
-      List<Pet> pets = (response.data as List)
-          .map((json) => Pet.fromJson(json))
-          .toList();
+      List<Pet> pets =
+          (response.data as List).map((json) => Pet.fromJson(json)).toList();
       return pets;
     } catch (error) {
       throw Exception("Error fetching user pets: $error");
@@ -78,13 +78,13 @@ class ApiService {
   }
 
   // SERVICES
-  static Future<Service> addService(CreateServiceRequest createServiceRequest) {
+  static Future<ServiceModel> addService(CreateServiceRequest createServiceRequest) {
     return _dio
         .post(
           ApiEndPoints.ADD_SERVICE_URL,
           data: createServiceRequest.toJson(),
         )
-        .then((value) => Service.fromJson(value.data));
+        .then((value) => ServiceModel.fromJson(value.data));
   }
 
   static Future<Service> addOfferingUser(
@@ -106,12 +106,12 @@ class ApiService {
             List<Service>.from(value.data.map((x) => Service.fromJson(x))));
   }
 
-  static Future<List<Service>> findAllServices(String userEmail) {
+  static Future<List<ServiceModel>> findAllServices() {
     return _dio
         .get(
-          ApiEndPoints.GET_SERVICES_URL + userEmail,
+          ApiEndPoints.GET_SERVICES_URL,
         )
-        .then((value) =>
-            List<Service>.from(value.data.map((x) => Service.fromJson(x))));
+        .then((value) => List<ServiceModel>.from(
+            value.data.map((x) => ServiceModel.fromJson(x))));
   }
 }

@@ -1,10 +1,13 @@
+import 'dart:developer';
+
 import 'package:get/get.dart';
+import 'package:pet_patner_demo/models/service_model.dart';
 import 'package:pet_patner_demo/network/remote/Requests/add_offering_user_request.dart';
+import 'package:pet_patner_demo/network/remote/Requests/create_service_request.dart';
 import '../models/pet.dart';
 import '../models/response_helper.dart';
 import '../models/service.dart';
 import '../models/user.dart';
-import '../network/remote/Requests/create_service_request.dart';
 import '../network/remote/Requests/login_request.dart';
 import '../network/remote/Requests/signup_request.dart';
 import '../network/remote/Requests/create_pet_request.dart';
@@ -17,6 +20,12 @@ class ApiController extends GetxController {
   var user = User().obs;
   var pets = <Pet>[].obs;
   var services = <Service>[].obs;
+  var servicesList = <ServiceModel>[].obs;
+  var isLoadingServices = false.obs;
+  var isLoadingAddService = true.obs;
+  var statusAddService = true.obs;
+  var errorAddService = ''.obs;
+  var service = ServiceModel().obs;
 
   Future<ResponseHelper> loginUser(String email, String password) async {
     isLoading.value = true;
@@ -42,14 +51,14 @@ class ApiController extends GetxController {
   }
 
   Future<ResponseHelper> signUpUser(
-      String fullName,
-      String email,
-      String gender,
-      String role,
-      String phone,
-      String imageLink,
-      String address,
-      String password,
+    String fullName,
+    String email,
+    String gender,
+    String role,
+    String phone,
+    String imageLink,
+    String address,
+    String password,
   ) async {
     isLoading.value = true;
     try {
@@ -77,7 +86,6 @@ class ApiController extends GetxController {
 
     status.value = true;
     return ResponseHelper(status: true, isLoading: isLoading.value);
-
   }
 
   Future<bool> addPet(CreatePetRequest createPetRequest) async {
@@ -123,7 +131,8 @@ class ApiController extends GetxController {
     }
   }
 
-  Future<void> addOfferingUser(AddOfferingUserRequest addOfferingUserRequest) async {
+  Future<void> addOfferingUser(
+      AddOfferingUserRequest addOfferingUserRequest) async {
     isLoading.value = true;
     try {
       var service = await ApiService.addOfferingUser(addOfferingUserRequest);
@@ -134,5 +143,55 @@ class ApiController extends GetxController {
       isLoading.value = false;
     }
   }
+
+  Future<void> fetchServices() async {
+    isLoadingServices.value = true;
+    try {
+      var services = await ApiService.findAllServices();
+      servicesList.value = services;
+      inspect(servicesList);
+    } catch (e) {
+      error.value = 'Error fetching services';
+    } finally {
+      isLoadingServices.value = false;
+    }
+  }
+
+  Future<ResponseHelper> addService(
+    String email,
+    String serviceName,
+    String imageLink,
+    String title,
+    int price,
+    String description,
+    int duration,
+  ) async {
+    isLoading.value = true;
+    try {
+      var addServiceRequest = new CreateServiceRequest(
+        description: description,
+        duration: duration,
+        userEmail: email,
+        imageLink: imageLink,
+        price: price,
+        serviceName: serviceName,
+        title: title,
+      );
+      var serviceResult = await ApiService.addService(addServiceRequest);
+      service.value = serviceResult;
+    } catch (e) {
+      errorAddService.value = 'Error add service';
+    } finally {
+      isLoadingAddService.value = false;
+    }
+
+    if (service.value.id == null) {
+      statusAddService.value = false;
+      return ResponseHelper(status: false, isLoading: isLoadingAddService.value);
+    }
+    statusAddService.value = true;
+    return ResponseHelper(status: true, isLoading: isLoadingAddService.value);
+  }
+
 // Add more methods as needed for other API requests
 }

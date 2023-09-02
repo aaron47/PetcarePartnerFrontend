@@ -21,8 +21,8 @@ class _LoginScreenState extends BaseRouteState {
   bool _showPassword = false;
   var _fPassword = new FocusNode();
 
-  final TextEditingController _emailController = TextEditingController();
-  final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _emailController = TextEditingController(text: "testuser@gmail.com");
+  final TextEditingController _passwordController = TextEditingController(text: "123456789");
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>(); // Add this key
   final ApiController apiController = Get.put(ApiController());
 
