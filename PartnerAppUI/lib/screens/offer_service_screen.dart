@@ -5,7 +5,6 @@ import 'package:pet_patner_demo/controllers/ApiController.dart';
 import 'package:pet_patner_demo/models/businessLayer/baseRoute.dart';
 import 'package:pet_patner_demo/screens/add_service_screen.dart';
 import 'package:pet_patner_demo/screens/notification_screen.dart';
-import 'package:pet_patner_demo/screens/service_agreement_screen.dart';
 import 'package:pet_patner_demo/widgets/drawer_widget.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:pet_patner_demo/widgets/pet_item.dart';

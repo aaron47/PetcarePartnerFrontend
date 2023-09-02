@@ -14,4 +14,7 @@ class ApiEndPoints {
   static const String ADD_OFFERING_USER_URL = "services/addOfferingUser";
   static const String GET_SERVICES_URL = "services/findAll";
   static const String FIND_USER_SERVICES_URL = "services/findUserServices/";
+
+  // RESERVATIONS URLS
+  static const String GET_RESERVATION_URL = "reservations";
 }

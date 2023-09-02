@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:pet_patner_demo/models/reservation.dart';
 import 'package:pet_patner_demo/models/service_model.dart';
 
 import '../../models/pet.dart';
@@ -78,7 +79,8 @@ class ApiService {
   }
 
   // SERVICES
-  static Future<ServiceModel> addService(CreateServiceRequest createServiceRequest) {
+  static Future<ServiceModel> addService(
+      CreateServiceRequest createServiceRequest) {
     return _dio
         .post(
           ApiEndPoints.ADD_SERVICE_URL,
@@ -113,5 +115,31 @@ class ApiService {
         )
         .then((value) => List<ServiceModel>.from(
             value.data.map((x) => ServiceModel.fromJson(x))));
+  }
+
+  // RESERVATIONS
+
+  static Future<List<Reservation>> findAllReservations() {
+    return _dio
+        .get(
+          ApiEndPoints.GET_RESERVATION_URL,
+        )
+        .then((value) => List<Reservation>.from(
+            value.data.map((x) => Reservation.fromJson(x))));
+  }
+
+  static Future<Reservation> acceptRequest (String id) {
+    return _dio
+        .post(
+          ApiEndPoints.GET_RESERVATION_URL + '/' + id + "/accept",
+        )
+        .then((value) =>Reservation.fromJson(value.data));
+  }
+  static Future<Reservation> declineRequest (String id) {
+    return _dio
+        .post(
+          ApiEndPoints.GET_RESERVATION_URL + '/' + id + "/decline",
+        )
+        .then((value) =>Reservation.fromJson(value.data));
   }
 }

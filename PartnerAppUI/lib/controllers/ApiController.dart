@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:get/get.dart';
+import 'package:pet_patner_demo/models/reservation.dart';
 import 'package:pet_patner_demo/models/service_model.dart';
 import 'package:pet_patner_demo/network/remote/Requests/add_offering_user_request.dart';
 import 'package:pet_patner_demo/network/remote/Requests/create_service_request.dart';
@@ -26,6 +27,14 @@ class ApiController extends GetxController {
   var statusAddService = true.obs;
   var errorAddService = ''.obs;
   var service = ServiceModel().obs;
+  var reservations = <Reservation>[].obs;
+  var isLoadingReservation = false.obs;
+  var reservationAccepte = Reservation().obs;
+  var isLoadingReservationAccepte = false.obs;
+  var errorReservationAccepte = ''.obs;
+  var reservationDecline = Reservation().obs;
+  var isLoadingReservationDecline = false.obs;
+  var errorReservationDecline = ''.obs;
 
   Future<ResponseHelper> loginUser(String email, String password) async {
     isLoading.value = true;
@@ -187,11 +196,70 @@ class ApiController extends GetxController {
 
     if (service.value.id == null) {
       statusAddService.value = false;
-      return ResponseHelper(status: false, isLoading: isLoadingAddService.value);
+      return ResponseHelper(
+          status: false, isLoading: isLoadingAddService.value);
     }
     statusAddService.value = true;
     return ResponseHelper(status: true, isLoading: isLoadingAddService.value);
   }
 
-// Add more methods as needed for other API requests
+  Future<void> fetchReservations() async {
+    isLoadingReservation.value = true;
+    reservations.clear();
+    try {
+      var reservationsResult = await ApiService.findAllReservations();
+      for (var reservation in reservationsResult) {
+        if (reservation.sitterId == user.value.id) {
+          reservations.add(reservation);
+        }
+      }
+      inspect(reservations);
+    } catch (e) {
+      error.value = 'Error fetching services';
+    } finally {
+      isLoadingReservation.value = false;
+    }
+  }
+
+  Future<ResponseHelper> acceptRequest(String id) async {
+    isLoadingReservationAccepte.value = true;
+    try {
+      
+      var acceptResult = await ApiService.acceptRequest(id);
+      print('>>>>$acceptResult');
+      reservationAccepte.value = acceptResult;
+    } catch (e) {
+      errorReservationAccepte.value = 'Error accept reservation';
+    } finally {
+      isLoadingReservationAccepte.value = false;
+    }
+
+    if (reservationAccepte.value.id == null) {
+      return ResponseHelper(
+          status: false, isLoading: isLoadingReservationAccepte.value);
+    }
+    return ResponseHelper(status: true, isLoading: isLoadingReservationAccepte.value);
+  }
+
+   Future<ResponseHelper> declineRequest(String id) async {
+    isLoadingReservationDecline.value = true;
+    try {
+      
+      var declineResult = await ApiService.declineRequest(id);
+      print('>>>>$declineResult');
+      reservationDecline.value = declineResult;
+    } catch (e) {
+      errorReservationDecline.value = 'Error decline reservation';
+    } finally {
+      isLoadingReservationDecline.value = false;
+    }
+
+    if (reservationDecline.value.id == null) {
+      return ResponseHelper(
+          status: false, isLoading: isLoadingReservationDecline.value);
+    }
+    return ResponseHelper(status: true, isLoading: isLoadingReservationDecline.value);
+  }
+
+  // Add more methods as needed for other API requests
 }
