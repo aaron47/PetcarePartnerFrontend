@@ -882,8 +882,8 @@ class _RequestListScreenState extends BaseRouteState {
             return Theme(
               data: ThemeData(dialogBackgroundColor: Colors.white),
               child: CupertinoAlertDialog(
-                title: Text("Requests"),
-                content: Text('Are you want to accept request'),
+                title: Text("Etes vous sur?"),
+                content: Text('Voulez vous continuer?'),
                 actions: <Widget>[
                   CupertinoDialogAction(
                     child: Text(
@@ -897,7 +897,7 @@ class _RequestListScreenState extends BaseRouteState {
                     },
                   ),
                   CupertinoDialogAction(
-                    child: Text("confirm"),
+                    child: Text("Confirmer"),
                     onPressed: () async {
                       showDialog(
                         context: context,

@@ -378,8 +378,8 @@ class _RequestDetailScreenState extends BaseRouteState {
             return Theme(
               data: ThemeData(dialogBackgroundColor: Colors.white),
               child: CupertinoAlertDialog(
-                title: Text("Requests"),
-                content: Text('Are you want to accept request'),
+                title: Text("Vous etes sur?"),
+                content: Text('Voulez vous continuer?'),
                 actions: <Widget>[
                   CupertinoDialogAction(
                     child: Text(
@@ -393,7 +393,7 @@ class _RequestDetailScreenState extends BaseRouteState {
                     },
                   ),
                   CupertinoDialogAction(
-                    child: Text("confirm"),
+                    child: Text("Confirmer"),
                     onPressed: () async {
                       Navigator.pop(context);
                       //Navigator.of(context).push(MaterialPageRoute(builder: (context) => LoginScreen(a: widget.analytics, o: widget.observer)));
